@@ -17,12 +17,13 @@ Example
 -------
 
 A simple POP3 test...
-
+```shell
 npipe -h pop3.mailhost.org -p 110 -f
 echo "USER myaccount" > in
 echo "PASS mypassword" > in
 echo "LIST" > in
 cat out
+```
 
 out should now contain the emails you have on the server.
 
